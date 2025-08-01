@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Médico - Fraldas - Neonatologia Alcon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Garante que o iframe ocupe todo o espaço vertical disponível */
+        .iframe-container {
+            height: calc(100vh - 80px); /* Altura da tela menos a altura do cabeçalho */
+        }
+    </style>
+</head>
+<body class="bg-slate-50 flex flex-col h-screen">
+
+    <!-- Cabeçalho Fixo -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto max-w-full px-4 sm:px-6">
+            <div class="flex items-center justify-between h-20">
+                <!-- Título da Página -->
+                <h1 class="text-xl sm:text-2xl font-bold text-slate-800">Relatório Médico - Fraldas</h1>
+                    <div class="flex justify-center">
+                        <h5 class="text-xs font-bold text-slate-100">neonatologiaufg@gmail.com</h5>
+                    </div>
+                <!-- Botão Voltar -->
+                <a href="index.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-slate-600 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                    Voltar ao Menu
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Container do Iframe -->
+    <main class="flex-grow">
+        <div class="iframe-container w-full h-full">
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLScl6UqHrVnkLBqh1saN2TrCmi29HA2YAp1j3LQnIbVH7k_peA/viewform?embedded=true"
+                class="w-full h-full border-0"
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+                Carregando…
+            </iframe>
+        </div>
+    </main>
+
+</body>
+</html>
